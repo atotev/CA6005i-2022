@@ -1,0 +1,49 @@
+(venv) atotev@LAPTOP-PRP9VH5G:~/assignment/data$ python src/evaluation.py
+[nltk_data] Downloading package stopwords to /home/atotev/nltk_data...
+[nltk_data]   Package stopwords is already up-to-date!
+[nltk_data] Downloading package wordnet to /home/atotev/nltk_data...
+[nltk_data]   Package wordnet is already up-to-date!
+[nltk_data] Downloading package omw-1.4 to /home/atotev/nltk_data...
+[nltk_data]   Package omw-1.4 is already up-to-date!
+100%|████████████████████████████████████████████████████████████████████████████| 12208/12208 [01:48<00:00, 112.20it/s]
+Evaluating vector space model
+100%|███████████████████████████████████████████████████████████████████████████████| 162/162 [1:01:26<00:00, 22.75s/it]
+map                     all     0.1848
+P_5                     all     0.1712
+P_10                    all     0.1519
+P_15                    all     0.1358
+P_20                    all     0.1269
+P_30                    all     0.1092
+P_100                   all     0.0522
+P_200                   all     0.0314
+P_500                   all     0.0144
+P_1000                  all     0.0074
+ndcg                    all     0.3484
+
+Evaluating BM25 probabilistic model
+100%|█████████████████████████████████████████████████████████████████████████████████| 162/162 [55:39<00:00, 20.61s/it]
+map                     all     0.2746
+P_5                     all     0.2500
+P_10                    all     0.2019
+P_15                    all     0.1754
+P_20                    all     0.1544
+P_30                    all     0.1281
+P_100                   all     0.0570
+P_200                   all     0.0327
+P_500                   all     0.0144
+P_1000                  all     0.0074
+ndcg                    all     0.4270
+
+Evaluating languauge model with Jelinek-Mercer smoothing
+100%|█████████████████████████████████████████████████████████████████████████████████| 162/162 [55:36<00:00, 20.59s/it]
+map                     all     0.2598
+P_5                     all     0.2375
+P_10                    all     0.1900
+P_15                    all     0.1642
+P_20                    all     0.1469
+P_30                    all     0.1223
+P_100                   all     0.0553
+P_200                   all     0.0324
+P_500                   all     0.0143
+P_1000                  all     0.0073
+ndcg                    all     0.4162
